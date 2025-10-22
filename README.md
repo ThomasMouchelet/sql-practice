@@ -203,7 +203,7 @@ réseaux Docker, pas seulement ceux de ce projet !
 
 ## 🧠 Liste des questions
 
-## Niveau 0 — Requêtes de base (SELECT simple)
+## Niveau 1 — Requêtes de base (SELECT simple)
 
 1. Affichez tous les étudiants.
 2. Affichez tous les cours disponibles.
@@ -213,7 +213,7 @@ réseaux Docker, pas seulement ceux de ce projet !
 6. Combien y a-t-il de cours au total ?
 7. Combien y a-t-il de professeurs au total ?
 
-## Niveau 1 — Filtres simples
+## Niveau 2 — Filtres simples
 
 8. Affichez les étudiants qui habitent à Paris.
 9. Affichez les étudiants qui habitent à Lyon ou Marseille.
@@ -226,7 +226,7 @@ réseaux Docker, pas seulement ceux de ce projet !
 16. Quels étudiants sont en 3ᵉ année ?
 17. Affichez les professeurs dont le salaire est supérieur à 50000 euros.
 
-## Niveau 2 — Agrégations et GROUP BY
+## Niveau 3 — Agrégations et GROUP BY
 
 18. Combien d'étudiants par département ?
 19. Combien d'étudiants par année d'étude ?
@@ -236,7 +236,7 @@ réseaux Docker, pas seulement ceux de ce projet !
 23. Quel est le nombre moyen de crédits suivis par étudiant ?
 24. Quel est le salaire minimum et maximum des professeurs ?
 
-## Niveau 3 — Jointures et sous-requêtes
+## Niveau 4 — Jointures et sous-requêtes
 
 25. Quelle est la meilleure note obtenue dans chaque cours ?
 26. Quels étudiants ont une moyenne supérieure à 14 ?
