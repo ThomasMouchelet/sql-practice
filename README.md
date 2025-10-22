@@ -53,6 +53,86 @@ Avant de commencer, assurez-vous d’avoir :
 
 ---
 
+## 📊 Visualiser le schéma de la base de données
+
+### Avec dbdiagram.io
+
+1. Rendez-vous sur [https://dbdiagram.io/](https://dbdiagram.io/)
+
+2. Créez un nouveau diagramme et copiez-collez le code DBML suivant :
+
+```dbml
+Table departements {
+  id int [pk, increment]
+  nom varchar(100) [not null]
+  batiment varchar(50)
+}
+
+Table professeurs {
+  id int [pk, increment]
+  nom varchar(100) [not null]
+  prenom varchar(100) [not null]
+  email varchar(150) [not null]
+  departement_id int [ref: > departements.id]
+  salaire decimal(10,2)
+  date_embauche date
+}
+
+Table etudiants {
+  id int [pk, increment]
+  nom varchar(100) [not null]
+  prenom varchar(100) [not null]
+  ville varchar(100)
+  date_naissance date
+  annee int
+  departement_id int [ref: > departements.id]
+}
+
+Table cours {
+  id int [pk, increment]
+  nom varchar(100) [not null]
+  credits int
+  professeur_id int [ref: > professeurs.id]
+}
+
+Table inscriptions {
+  id int [pk, increment]
+  etudiant_id int [ref: > etudiants.id]
+  cours_id int [ref: > cours.id]
+  date_inscription date
+}
+
+Table notes {
+  id int [pk, increment]
+  inscription_id int [ref: > inscriptions.id]
+  note decimal(4,2)
+  date_eval date
+}
+```
+
+3. Le diagramme se génère automatiquement et affiche les relations entre les tables
+
+### Avec Adminer (interface web incluse)
+
+Adminer est déjà configuré dans le `docker-compose.yml` :
+
+1. Assurez-vous que les conteneurs sont démarrés :
+
+   ```bash
+   docker compose up -d
+   ```
+
+2. Ouvrez votre navigateur à l'adresse : [http://localhost:8080](http://localhost:8080)
+
+3. Connectez-vous avec les informations suivantes :
+   - **Système** : MySQL
+   - **Serveur** : mysql
+   - **Utilisateur** : root
+   - **Mot de passe** : supersecret (ou la valeur de `MYSQL_ROOT_PASSWORD` dans `.env`)
+   - **Base de données** : app_db
+
+---
+
 ## 🧹 Reset de l'environnement Docker (projet)
 
 ### Arrêter et supprimer les conteneurs
