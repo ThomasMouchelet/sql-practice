@@ -203,25 +203,44 @@ réseaux Docker, pas seulement ceux de ce projet !
 
 ## 🧠 Liste des questions
 
+## Niveau 0 — Requêtes de base (SELECT simple)
+
+1. Affichez tous les étudiants.
+2. Affichez tous les cours disponibles.
+3. Affichez la liste de tous les départements.
+4. Affichez tous les professeurs.
+5. Combien y a-t-il d'étudiants au total ?
+6. Combien y a-t-il de cours au total ?
+7. Combien y a-t-il de professeurs au total ?
+
 ## Niveau 1 — Filtres simples
 
-1. Affichez la liste des étudiants du département “Informatique”.
-2. Quels cours ont plus de 4 crédits ?
-3. Quelles sont les professeures embauchées avant 2019 ?
-4. Quels étudiants sont en 3ᵉ année ?
+8. Affichez les étudiants qui habitent à Paris.
+9. Affichez les étudiants qui habitent à Lyon ou Marseille.
+10. Affichez les étudiants dont le nom commence par "D".
+11. Combien d'étudiants habitent à Paris ?
+12. Combien d'étudiants habitent dans chaque ville ?
+13. Affichez la liste des étudiants du département "Informatique".
+14. Quels cours ont plus de 4 crédits ?
+15. Quelles sont les professeures embauchées avant 2019 ?
+16. Quels étudiants sont en 3ᵉ année ?
+17. Affichez les professeurs dont le salaire est supérieur à 50000 euros.
 
 ## Niveau 2 — Agrégations et GROUP BY
 
-5. Combien d’étudiants par département ?
-6. Quelle est la moyenne des salaires des professeurs par département ?
-7. Quelle est la note moyenne par cours ?
-8. Quel est le nombre total d’inscriptions par cours ?
-9. Quel est le nombre moyen de crédits suivis par étudiant ?
+18. Combien d'étudiants par département ?
+19. Combien d'étudiants par année d'étude ?
+20. Quelle est la moyenne des salaires des professeurs par département ?
+21. Quelle est la note moyenne par cours ?
+22. Quel est le nombre total d'inscriptions par cours ?
+23. Quel est le nombre moyen de crédits suivis par étudiant ?
+24. Quel est le salaire minimum et maximum des professeurs ?
 
 ## Niveau 3 — Jointures et sous-requêtes
 
-10. Quelle est la meilleure note obtenue dans chaque cours ?
-11. Quels étudiants ont une moyenne supérieure à 14 ?
-12. Quelle est la note moyenne par département d’étudiants ?
-13. Quel professeur encadre le plus d’étudiants ?
-14. Quelle est la répartition des étudiants par ville ?
+25. Quelle est la meilleure note obtenue dans chaque cours ?
+26. Quels étudiants ont une moyenne supérieure à 14 ?
+27. Quelle est la note moyenne par département d'étudiants ?
+28. Quel professeur encadre le plus d'étudiants ?
+29. Quelle est la répartition des étudiants par ville ?
+30. Affichez les cours avec le nom du professeur qui les enseigne.
