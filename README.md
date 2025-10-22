@@ -163,31 +163,31 @@ docker compose down -v --rmi all
 
 ## 🧹 Reset de l'environnement Docker (machine)
 
-# 1. Arrêter TOUS les conteneurs Docker sur votre machine
+### 1. Arrêter TOUS les conteneurs Docker sur votre machine
 
 ```bash
 docker stop $(docker ps -aq)
 ```
 
-# 2. Supprimer TOUS les conteneurs
+### 2. Supprimer TOUS les conteneurs
 
 ```bash
 docker rm $(docker ps -aq)
 ```
 
-# 3. Supprimer TOUS les volumes
+### 3. Supprimer TOUS les volumes
 
 ```bash
 docker volume rm $(docker volume ls -q)
 ```
 
-# 4. Supprimer TOUTES les images
+### 4. Supprimer TOUTES les images
 
 ```bash
 docker rmi $(docker images -q) --force
 ```
 
-# OU utilisez la commande ultime qui fait tout en une fois :
+### OU utilisez la commande ultime qui fait tout en une fois :
 
 ```bash
 docker system prune -a --volumes --force
