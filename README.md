@@ -34,10 +34,8 @@ Avant de commencer, assurez-vous d’avoir :
 
    ```bash
    # remplacez le nom du conteneur "mysql" s’il diffère dans votre docker-compose
-   docker exec -i mysql mysql -uroot -p"$MYSQL_ROOT_PASSWORD" < seed.sql
+   docker exec -i mysql mysql -uroot -psupersecret < seed.sql
    ```
-
-   > Si votre fichier `.env` ne définit pas `MYSQL_ROOT_PASSWORD`, remplacez `"$MYSQL_ROOT_PASSWORD"` par le mot de passe root réel.
 
 4. Alternative — depuis le shell MySQL dans le conteneur :
 

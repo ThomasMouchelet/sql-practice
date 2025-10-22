@@ -1,6 +1,6 @@
--- Base : universite_db
-CREATE DATABASE IF NOT EXISTS universite_db;
-USE universite_db;
+-- Base : app_db
+-- CREATE DATABASE IF NOT EXISTS app_db;
+USE app_db;
 
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS notes;
