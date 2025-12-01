@@ -201,6 +201,14 @@ réseaux Docker, pas seulement ceux de ce projet !
 
 ---
 
+### Alternative : Utilisation de [SQL LITE ONLINE](https://sqliteonline.com/)
+
+- rendez-vous sur [SQL LITE ONLINE](https://sqliteonline.com/)
+- Copier coller le fichier seed-sqllite.sql
+- Appyez sur run
+
+---
+
 ## 🧠 Liste des questions
 
 ## Niveau 1 — Requêtes de base (SELECT simple)
